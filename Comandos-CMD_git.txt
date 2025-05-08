@@ -1,0 +1,94 @@
+//////////////////////////////////////
+///// COMANDOS CMD/////
+////////////////////////////////////
+1. Inicializar y configurar un repositorio
+Crear un repositorio local
+git init
+Inicia un nuevo repositorio Git en tu carpeta actual.
+
+Conectar con un repositorio remoto (GitHub)
+git remote add origin https://github.com/usuario/repo.git
+Vincula el repositorio local con uno remoto en GitHub.
+
+Verificar qué repositorios remotos están configurados
+git remote -v
+Muestra los repositorios remotos configurados.
+
+2. Manejo de ramas
+Ver qué ramas existen en tu repositorio
+git branch
+Lista las ramas locales existentes.
+
+Crear una nueva rama
+git checkout -b nombre_rama
+Crea una nueva rama y cambia a ella.
+
+Cambiar de rama
+git checkout nombre_rama
+Cambia a una rama específica.
+
+Eliminar una rama local
+git branch -d nombre_rama
+Elimina una rama local.
+
+Subir una nueva rama al remoto
+git push origin nombre_rama
+Sube la rama actual al repositorio remoto en GitHub.
+
+3. Agregar y confirmar cambios
+Ver el estado de los archivos
+git status
+Muestra los archivos modificados y pendientes de guardar.
+
+Agregar archivos al área de preparación
+git add .
+Agrega todos los archivos modificados para ser incluidos en el commit.
+
+git add nombre_del_archivo
+Agrega un archivo específico.
+
+Guardar los cambios con un commit
+git commit -m "Descripción de los cambios realizados"
+Guarda los cambios en el repositorio local con una descripción.
+
+4. Actualizar el repositorio (Subir cambios a GitHub)
+Subir los cambios al repositorio remoto
+git push origin main
+Envía los cambios locales a la rama main en GitHub.
+
+Subir una rama nueva al remoto y hacerla la principal
+git push -u origin nombre_rama
+Sube la rama y la establece como la predeterminada.
+
+5. Descargar y sincronizar cambios
+Descargar cambios del repositorio remoto
+git pull origin main
+Obtiene los cambios recientes del repositorio remoto y los integra con la rama local.
+
+Sincronizar el repositorio con el remoto
+git fetch --all
+Obtiene información sobre los cambios en el remoto, sin aplicarlos todavía.
+
+6. Historial y seguimiento de cambios
+Ver el historial de commits
+git log --oneline
+Muestra un historial resumido de commits.
+
+Comparar cambios entre versiones
+git diff
+Muestra las diferencias entre el último commit y los archivos actuales.
+
+7. Manejo de errores y configuración
+Deshacer cambios no confirmados
+git checkout -- nombre_del_archivo
+Revierte los cambios en un archivo al último estado confirmado.
+
+Deshacer el último commit (sin perder cambios)
+git reset --soft HEAD~1
+Elimina el último commit, pero mantiene los cambios en el área de preparación.
+
+Eliminar el último commit y los cambios
+
+git reset --hard HEAD~1
+
+Elimina el último commit y borra los cambios realizados.
