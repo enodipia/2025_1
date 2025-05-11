@@ -1,0 +1,4 @@
+Arroz;2
+Frijol;3
+Azúcar;5
+Gunabana;6
